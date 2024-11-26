@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Login & Signup Form</title>
+    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!------------ Navigation Bar ------------>
+  <header>
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <img src="images/logo.jpeg" alt="logo">
+            <h2>CodingSriLanka</h2>
+        </a>
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+        <button class="login-btn">LOG IN</button>
+    </nav>
+  </header>
+
+   <!-------------- Login Popup Form -------------->
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup" id="loginForm">
+        <div class="form-box">
+            <div class="form-details">
+                <h2>Welcome Back</h2>
+                <p>Please login using your personal information to stay connected with us.</p>
+            </div>
+            <div class="form-content">
+                <i class="fas fa-times" id="closeLogin"></i>
+                <h2>LOGIN</h2>
+                <form>
+                    <div class="input-field">
+                        <input type="text" placeholder="Email address">   
+                    </div>
+                    <div class="input-field">
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <a href="#" class="forgot-pass">Forgotten Password?</a>
+                    <button>Log in</button>
+                    <div class="bottom-link">
+                        Don't have an account?
+                        <a href="#" id="signupLink">Signup</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+     <!-------------- Signup Popup Form -------------->
+
+    <div class="form-popup" id="signupForm">
+       <div class="form-box">
+            <div class="form-details">
+                <h2>Create Account</h2>
+                <p>To become a part of our community, please sign up using your personal information.</p>
+            </div>
+            <div class="form-content">
+                <i class="fas fa-times" id="closeSignup"></i>
+                <h2>SIGNUP</h2>
+                <form>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your email">   
+                    </div>
+                    <div class="input-field">
+                        <input type="password" placeholder="Create password">
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <button>Log in</button>
+                    <div class="bottom-link">
+                        Already have an account?
+                        <a href="#" id="loginLink">Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
